@@ -1,0 +1,36 @@
+.provides { 
+    background: url(../img/main_bg.png) center (center/cover) no-repeat;
+    min-height: 889px;
+    padding: 80px 0 60px 0;
+    &__tabs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 25px auto 0 auto;        
+        width: 843px;
+        height: 64px;
+        border: 1px solid #ffffff;
+        margin-bottom: 35px;
+        padding: 0;
+    }
+    &__link {       
+        padding: 0 20px 0 20px;
+        border-right: solid 1px #ffffff;
+        list-style-type: none;        
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 400;
+        color: #ffffff;      
+        &:last-child {
+            border-right: none;}
+        &:hover { 
+            font-weight: 700;
+            color: #00c2f0;
+            cursor: pointer;            
+        }           
+    }
+    .active {
+        color: $main_color;
+        text-decoration: none;
+    }
+}
