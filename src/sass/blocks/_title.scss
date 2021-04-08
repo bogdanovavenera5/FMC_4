@@ -1,7 +1,12 @@
 .title {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 42px;
+    line-height: 48px;
     font-weight: 900;
     color: #ffffff;
-    text-align: center;
+    &__fsz-30 {
+        font-size: 30px;
+        line-height: 35px;       
+        text-align: center;
+    }
+   
 }

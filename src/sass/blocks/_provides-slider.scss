@@ -3,8 +3,15 @@
     left: 50%;    
     transform: translateX(-50%);
     width: 696px;   
-    bottom: 141px; 
+    bottom: 144px; 
    
+}
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0 ;
+    padding: 0;
 }
 .provides-slider .slick-arrow { 
     position: absolute; 
