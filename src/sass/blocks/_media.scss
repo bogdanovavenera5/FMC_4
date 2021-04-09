@@ -112,10 +112,10 @@
             width: 681px;           
         }               
     }
-    .provides-slider {
+    .provides-slider {        
         transform: translateX(-50%);           
         width: 681px;
-        bottom: 154px;  
+        top: 37px;  
     }        
     .provides-slider__screen {
          width: 681px;
@@ -294,7 +294,7 @@
     } 
     .provides-slider {        
         width: 527px;
-        bottom: 122px;  
+        top: 28px;  
     }        
     .provides-slider__screen {
         width: 527px;
@@ -496,7 +496,7 @@
         }          
         .provides-slider {        
             width: 326px;
-            bottom: 97px;  
+            top: 18.5px;  
         }        
         .provides-slider__screen {
             width: 326px;
@@ -674,10 +674,11 @@
         }          
         .provides-slider {        
             width: 225px;
-            bottom: 18px;              
+            top: 10px;              
         }        
         .provides-slider__screen {
             width: 225px;          
         }       
     } 
+   
 }
