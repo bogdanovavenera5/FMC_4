@@ -7,7 +7,6 @@
         margin-top: 28px;
         display: flex;
         justify-content: space-between;
-        margin-right: 30px;        
     }
     &__logo {
         width: 140px;
@@ -26,16 +25,27 @@
         text-transform: uppercase;
         text-decoration: none;   
         color: #ffffff;
-        &:active,&:focus {outline: none; }
-        &:last-child {
-            margin-right: none;
-        }
+        &:active,&:focus {outline: none; }           
         &:hover {            
             color: #00c2f0;                  
             text-decoration: underline;
             cursor: pointer;         
         }     
-    }     
+    }
+    &__menu1_link1{
+        margin-right: 0;            
+        font-size: 13px;
+        line-height: 26px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;   
+        color: #ffffff;
+        &:active,&:focus {outline: none; }           
+        &:hover {            
+            color: #00c2f0;                  
+            text-decoration: underline;
+            cursor: pointer;  }         
+    }
     &__wrapper {
         display: flex;
         justify-content: space-between;       
@@ -45,7 +55,7 @@
         min-width: 552px;
     }   
     &__subheader {
-        margin-top: 27px;
+        margin: 27px 0 20px 0;
         font-size: 24px;
         line-height: 30px;
         font-weight: 400;

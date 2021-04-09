@@ -16,7 +16,7 @@
     }
     .slick-prev  {        
         left: 50%;       
-        transform: translateX(calc(-50% - 50px));       
+        transform: translateX(calc(-50% - 50px));         
         border: none;
         background-color: opacify($color: #00000005, $amount: 0);
     } 

@@ -14,33 +14,46 @@
         }        
     } 
     .promo {
+        &__menu {
+            margin-top: 20px;
+            margin-right: 20px;
+        }
         &__logo {
-            img {
-                width: 100%;
-            }           
-        }       
+            margin-left: 20px;           
+        }        
         &__subheader {
             font-size: 22px;
+            margin-left: 20px;
+        }
+        &__block {
+            margin-top: 20px;
+            margin-right: 0px;
+            display: flex;
+            justify-content: spase-between;
         }
         &__block1 {
-             margin-top: 30px;
+             margin-top: 28px;
+            .title {
+                margin-top: 60px;
+                font-size: 30px;
+                margin-left: 20px;
+            }
         }
-        &__block2 { 
-            margin-top: 134px;           
-            img {    
-                width: 100%;
-        }
-        .title {
-            font-size: 32px;
-        }
+        &__block2  { 
+        img {
+            padding-top: 200px;
+            width: 300px;  
+            }       
         }           
         .button {
             width: 200px;
             height: 50px;
             font-size: 14px;
-        }
-        } 
+            margin-left: 20px;
+        }       
+    } 
     .prengi {
+        min-height: 700px;
         padding: 40px 0 30px 0;
         &__wrapper {
             display: flex;
@@ -82,7 +95,7 @@
             justify-content: space-evenly;
         }  
     }
-    .provides {
+    .provides {       
         .title {
             &__fsz-30 {
                 font-size: 28px;
@@ -96,13 +109,13 @@
             width: 927px;
         }
         .slick-slide {
-            min-height: 430px;
+            width: 681px;           
         }               
     }
     .provides-slider {
         transform: translateX(-50%);           
         width: 681px;
-        bottom: 150px;  
+        bottom: 154px;  
     }        
     .provides-slider__screen {
          width: 681px;
@@ -152,14 +165,18 @@
     }
     }
     .promo {
+        min-height: 350px;
         &__menu1_link {
             margin-right: 20px;
             margin-top: 20px;
         }
+        &__menu {
+            margin-right: 25px;
+        }
         &__logo {
             width: 110px;
             height: 50px;
-            margin-left: 20px;
+            margin-left: 25px;
         }
         &__block {
             margin-top: 0;
@@ -175,9 +192,7 @@
             font-size: 12px;
             margin-left: 15px;
         }
-        .promo__phone {
-            margin-top: 131px;            
-        }
+      
         .promo__block1 {
             min-width: 240px;
             margin-left: 15px;
@@ -196,6 +211,7 @@
         }
     } 
     .prengi {
+        min-height: 520px;       
         &__descr { 
             padding: 15px;          
             font-size: 13px;
@@ -249,8 +265,9 @@
             }
         }         
     }
-    .provides {
+    .provides {        
         padding: 40px 0 30px 0;
+        min-height: 700px;
         .title {
             &__fsz-30 {
                 font-size: 24px;
@@ -271,28 +288,24 @@
             align-items: center;
             margin: 0 auto;
         }       
-        .slick-slaider  {
-            img { 
-                min-height: 333px;
-            }
-           
-        }
-    }   
-    .provides-slider {
-        transform: translateX(calc(-50% +2));           
+        .slick-slide  {                       
+            width: 526px;                     
+        }           
+    } 
+    .provides-slider {        
         width: 527px;
-        bottom: 206px;  
+        bottom: 122px;  
     }        
     .provides-slider__screen {
         width: 527px;
     }
     .provides-slider .slick-prev {
-        left: -90px;;
+        left: -90px;
     }
     .provides-slider .slick-next {
        right: -90px;
-    }        
-}
+    }    
+}  
 @media screen and (max-width: 767px) {
     .container {
         width: 540px;
@@ -340,8 +353,7 @@
             margin-left: 6px;
         }
     }
-    .promo {      
-        position: relative;
+    .promo {        
         min-height: 400px;
         &__menu {
             display: none;
@@ -359,43 +371,54 @@
         &__subheader {
             font-size: 18px;
             margin: 10px 0 0 10px;          
-        }              
+        }
+        
         .promo__block2 {
             margin-top: 0px;
-            min-height: 300px;           
+            min-height: 100px;           
             img {              
                 width: 40%;              
                 margin-left: 310px;
-                margin-top: 50px;
+                margin-top: 0px;
+                padding-top: 10px;
             } 
         }
         .button {
-            position: absolute;
-            top: 50px;
-            right: 160px;        
+           margin-top: 20px;
+           width: 140px;
+           font-size: 10px;
+           height: 30px; 
         }
         .title {
             font-size: 22px;
             margin-left: 10px;
+            margin-top: 20px;
 
         }
     }
-    .prengi {
+    .prengi { 
+         padding: 30px 0 30px 0; 
         &__descr { 
-            padding:30px 0 0 0;          
+            padding: 40px 0 0 0;
+            line-height: 15px;          
             font-size: 10px;
             br {
                 display: none;
             }
         }
         &__descr1 {
-            padding: 30px 0 0 0;   
+            padding: 40px 0 0 0;   
             font-size: 10px;
+            line-height: 15px;
             br {
                 display: none;
             }        
         }
+        &__wrapper {
+            margin-top: 30px;
+        }
         &__title {
+            margin-top: 0;
             font-size: 20px;
             h2 {
                 margin: 15px 0 15px 0;
@@ -442,8 +465,43 @@
             span {
                 margin-bottom: 3px;
             }
-        }     
-    }       
+        }
+    }
+    .provides {
+        padding: 40px 0 30px 0;
+        min-height: 530px;
+        .title {
+            &__fsz-30 {
+                font-size: 16px;
+            }
+            }
+        &__tabs {
+            width: 500px;
+            height: 40px;
+        }
+        &__link {
+            font-size: 10px;         
+            line-height: 18px;           
+            text-align: center;
+        }       
+        &__img {
+            width: 447px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }       
+        .slick-slide  {           
+            width: 326px;                     
+        }          
+        .provides-slider {        
+            width: 326px;
+            bottom: 97px;  
+        }        
+        .provides-slider__screen {
+            width: 326px;
+        }       
+    } 
 }
 @media screen and (max-width: 575px) {
     .container {
@@ -452,7 +510,7 @@
     } 
     .header {
         min-height: 84px;
-        padding: 0;
+        padding: 8px 0 8px 0;
         &__wrapper {
             display: flex;
             flex-direction: column;
@@ -474,7 +532,7 @@
         padding: 15px;
         min-height: 250px;
         &__logo {
-           margin-left: 10px; 
+           margin-left: 20px; 
         }       
         &__subheader {
             font-size: 18px;
@@ -499,6 +557,7 @@
         }          
     }
     .prengi {
+        padding: 25px 0;
         &__block {
             margin: 10px 0 10px 0;
         }
@@ -508,38 +567,44 @@
         &__wrapper {
             display: flex;
             flex-direction: column;
+            margin-top: 0;
         }
         &__wrapper1 {
             display: flex;
             flex-direction: column;
+            margin-top: 0;
         }
         &__descr {            
-            padding-top: 20px;
+            padding-top: 30px;
             display: flex;
-            justify-content: center;                    
+            justify-content: center;
+            width: 200px;
+            margin: 0 auto;                      
         }
         &__descr1 {            
-            padding-top: 25px;
+            padding-top: 30px;
             display: flex;
-            justify-content: center;                    
+            justify-content: center;
+            width: 200px;
+            margin: 0 auto;                    
         }
         &__text {
             text-align: center;
             margin: 0 auto;
         }
         &__img {
-            img {
-                width: 80%;
-            }
+           width: 230px;
+           margin: 0 auto;
         }
         &__title {
             font-size: 18px;
             h2 {
-                margin: 15px 0 15px 0;
+                margin: 10px 0 15px 0;
             }        
         }       
         &__arrow {
-            margin-top: 15px;
+            margin-top: 0;
+            margin-bottom: 0;
         }        
         &__left {
             width: 60px;
@@ -573,5 +638,46 @@
                 left: -2.8px;
             }
         }
+    } 
+    .provides {       
+        padding: 40px 0 20 0;
+        min-height: 500px;
+        .title {
+            &__fsz-30 {
+                font-size: 16px;
+            }
+            }
+        &__tabs {
+            margin-top: 20px;
+            width: 300px;
+            height: 40px;
+        }
+        &__link {        
+            font-size: 10px;         
+            line-height: 15px;           
+            text-align: center;
+            padding: 5px;
+            font-weight: 300;
+        }       
+        &__img {
+            width: 302px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }       
+        .slick-slide  {           
+            width: 225px;
+            margin: auto;
+            left: +50px;
+            transform: translateX(-50px);                                         
+        }          
+        .provides-slider {        
+            width: 225px;
+            bottom: 18px;              
+        }        
+        .provides-slider__screen {
+            width: 225px;          
+        }       
     } 
 }

@@ -1,5 +1,5 @@
 .prengi {
-    max-height: 895px;
+    min-height: 895px;
     padding: 80px 0 80px 0;
     position: relative;
     &__wrapper {
@@ -46,11 +46,12 @@
     }            
     &__wrapper1 {
         display: flex;
-        justify-content: space-between;  
+        justify-content: space-between;
+        margin-top: 36px;  
     }
   
     &__title {
-        margin-top: 35px;
+        margin-top: 65px;
         text-align: center; 
         margin: 0 auto;            
         font-size: 48.1px;
@@ -62,7 +63,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 50px ;   
+        margin-top: 30px ;
+        margin-bottom: 30px;   
     }
     &__left {        
         position: relative;
