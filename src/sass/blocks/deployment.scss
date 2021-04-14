@@ -1,0 +1,95 @@
+.deployment { 
+    padding-top: 50px;
+    position: relative;   
+    &__left {        
+        position: absolute;       
+        width: 50vw;
+        overflow: hidden;
+        top: 0;
+        left: 0;     
+        z-index: -2;       
+    }
+    &__left-block {
+        position: absolute;
+        width: 167px;
+        height: 167px;
+        opacity: 0.3;
+        background-color: #00c2f0;
+        right: 50px;
+        top: 213px;
+        z-index: 2;      
+    }    
+    &__right {
+        position: absolute;       
+        width: 50vw;
+        overflow: hidden;
+        top: 0; 
+        right: 0;    
+        z-index: -2;
+    }
+    &__right-block {
+        position: absolute;
+        width: 167px;
+        height: 167px;
+        opacity: 0.3;
+        background-color: #00c2f0;
+        left: 50px;
+        top: 213px; 
+        z-index: 2;           
+    }
+    .deployment__img {
+        width: 100%;             
+    } 
+    .deployment__title {
+        top: 30px;
+    }    
+    .deployment__left { 
+        .deployment__header {
+            position: absolute;
+            top: 250px;
+            right: 112px;        
+            font-size: 30px;
+            line-height: 22px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #ffffff;
+            z-index: 1;
+        }        
+    }  
+    .deployment__right {
+        .deployment__header {
+            position: absolute;
+            top: 250px;
+            left: 92px;        
+            font-size: 30px;
+            line-height: 22px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #ffffff;
+            z-index: 1;
+        }       
+    }
+}
+.deployment .deployment__right .deployment__subheader {
+    position: absolute;        
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #ffffff;
+    z-index: 1;
+    top: 280px;
+    left: 92px;
+    margin-top: 20px;    
+}
+.deployment .deployment__left .deployment__subheader {
+    position: absolute;        
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #ffffff;
+    z-index: 1;
+    top: 280px;
+    margin-top: 20px;  
+    right: 112px;
+    text-align: end;      
+}

@@ -15,19 +15,16 @@
     }
     &__link {       
         padding: 0 20px 0 20px;
-        border-right: solid 1px #ffffffe8;
+        border-right: solid 1px #cec9c9e8;
         list-style-type: none;        
         font-size: 14px;
         line-height: 45px;
         font-weight: 400;
-        color: #ffffff;      
+        color: #ffffff;
+        cursor: pointer;      
         &:last-child {
-            border-right: none;}
-        &:hover { 
-            font-weight: 400;
-            color: #00c2f0;
-            cursor: pointer;            
-        }           
+            border-right: none; 
+        }       
     }
     &__wrapper {
         position: relative;
@@ -39,8 +36,10 @@
         align-items: center;
         margin: 0 auto;
     }
+   
     .active {
         color: $main_color;
         text-decoration: none;
     }
+
 }
