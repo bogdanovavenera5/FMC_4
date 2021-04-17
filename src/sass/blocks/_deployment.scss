@@ -1,6 +1,7 @@
 .deployment { 
     padding-top: 50px;
-    position: relative;   
+    position: relative;
+    min-height: 580px;   
     &__left {        
         position: absolute;       
         width: 50vw;
@@ -14,10 +15,10 @@
         width: 167px;
         height: 167px;
         opacity: 0.3;
-        background-color: #00c2f0;
+        background-color: $main-color;
         right: 50px;
         top: 213px;
-        z-index: 2;      
+        z-index: 1;      
     }    
     &__right {
         position: absolute;       
@@ -32,14 +33,11 @@
         width: 167px;
         height: 167px;
         opacity: 0.3;
-        background-color: #00c2f0;
+        background-color: $main-color;
         left: 50px;
         top: 213px; 
-        z-index: 2;           
-    }
-    .deployment__img {
-        width: 100%;             
-    } 
+        z-index: 1;           
+    }    
     .deployment__title {
         top: 30px;
     }    
