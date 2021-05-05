@@ -385,7 +385,7 @@
         .promo__block2 {
             width: 339px;
             img {
-                width: 70%;
+                width: 90%;
                 margin-right: 30px;
             }
         }
@@ -736,7 +736,7 @@
             margin-top: 0px;
             min-height: 100px;           
             img {              
-                width: 40%;              
+                width: 60%;              
                 margin-left: 310px;
                 margin-top: 0px;
                 padding-top: 10px;
@@ -1065,21 +1065,21 @@
         }
     }
     .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: 30px;
         top: 44px;
         span {
             margin-bottom: 3px;
         }
     }
-
     .pageup {
         &__img {
             width: 35px;
         }
         bottom: 25px;
-    }
-    
-  
+    }   
 }      
 @media screen and (max-width: 575px) {
     .container {
@@ -1443,34 +1443,44 @@
         &__modul {        
             margin-left: 13px;
             text-align: center;
-            margin:  0 auto;      
+            margin:  0 auto;
+            width: 100%;      
         }
         &__industry {
             margin:  0 auto;
             margin-left: 0;                       
         }
         &__company {            
-            width: 300px;
+            width: 100%; 
+            left: 50%;                    
+            justify-content: center;
+            align-items: center;     
             margin: 0 auto;          
         }         
         &__line {
-            width: 300px;
+            width: 100%;
             margin:  20px auto;
         }
-        &__logo {
-            margin:  0 auto; 
+        .footer__logo {
+            margin:  0 auto;
+            img {
+                margin-top: 0;
+            }
         }    
-        &__text {
-            width: 300px;
+        &__text { 
+            display: flex;
+            justify-content: center;
+            align-items: center;         
             margin:  20px auto;
+            margin-bottom: 10px;
             text-align: center;
-            font-size: 12px;       
+            font-size: 12px;
+            width: 100%;          
         }
         &__title {
             margin:  10px auto;
             font-size: 14px;
-            font-weight: 300;
-           
+            font-weight: 500;           
         }
         .row2 {
             width: 300px;
@@ -1484,6 +1494,33 @@
                 font-size: 12px; 
             }
         }     
+    }
+    .hamburger {
+        right: 25px; 
+        top: 30px;
+        width: 28px;    
+        
+    }
+    .menu {
+        &__block { 
+            width: 230px;
+            padding-left: 20px;
+            padding-top: 120px;
+        }
+        &__link {
+            font-size: 16px;
+            font-weight: 600;       
+            &:before { 
+                width: 10px;
+                height: 10px;
+                left: -25px;
+            }
+        }
+        &__close {
+            img {
+                width: 22px;
+            }
+        }             
     }
 }
 @media screen and (max-width: 574px) {
@@ -1500,14 +1537,16 @@
     }   
 } 
 @media screen and (max-width: 404px) {
-        &__body {
-                top: 50px;
-        }
+    .advantages {        
         &__text {
             top: 55px;
             &_1 {
                 top: 60px;
             }
+        } 
+        &__body {
+                top: 50px;
         }    
-}     
+    }
+}
 
